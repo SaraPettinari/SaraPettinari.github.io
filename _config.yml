@@ -120,6 +120,7 @@ author:
 # Reading Files
 include:
   - .htaccess
+  - _index
   #- _pages
   - files
 exclude:

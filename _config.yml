@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Sara Pettinari"
 title_separator          : "-"
 name                     : &name "Sara"
 description              : &description "personal description"
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "Sara Pettinari"
   avatar           : "profile.png"
   bio              : "Your biography for the left-hand sidebar"
   location         : "Camerino, MC"
@@ -102,14 +102,14 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/sara-pettinari-9a01a5161/"
+  linkedin         : "sara-pettinari-9a01a5161/"
   orcid            : "https://orcid.org/0000-0002-5548-9806"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : #"replacethistwitterhandle"
+  twitter          : "sara_pettinari"
   vine             :
   weibo            :
   xing             :

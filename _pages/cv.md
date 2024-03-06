@@ -11,30 +11,27 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* PhD Candidate in Computer Science and Mathematics - University of Camerino (Italy)
+* Master Degree in Computer Science (LM-18) - University of Camerino (Italy) - 2020
+* Teacher training (FOR24) - University of Camerino (Italy)
+* Bachelor Degree in Computer Science (L-31) - University of Camerino (Italy)
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
+Visiting Periods
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Visiting PhD student with Process Analytics group -  Eindhoven University of Technology (The Netherlands)
+* Erasmus+ Project in New Technologies in Computer Science - Universidad de Murcia (Spain) - 2019
+
+
+Research Groups
+======
+* Member of the Process and Service Lab ([PROS Lab](https://pros.unicam.it)) at University of Camerino (Italy) - 2020
+
+
+Research Projects
+======
+* Member of the founded national project SEDUCE “Designing Spatially Distributed Cyber-Physical Systems under Uncertainty”. MIUR - PRIN 2017
+
 
 Publications
 ======
@@ -42,18 +39,4 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+

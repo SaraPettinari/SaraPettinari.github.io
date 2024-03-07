@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* **PhD Candidate in Computer Science and Mathematics** - University of Camerino (Italy) - 2020-ongoing
-* **Master Degree in Computer Science** (LM-18) - University of Camerino (Italy) - 2018-2020
-* **Bachelor Degree in Computer Science** (L-31) - University of Camerino (Italy) - 2015-2018
+* PhD Candidate in Computer Science and Mathematics - University of Camerino (Italy) - 2020-ongoing
+* Master Degree in Computer Science (LM-18) - University of Camerino (Italy) - 2018-2020
+* Bachelor Degree in Computer Science (L-31) - University of Camerino (Italy) - 2015-2018
 
 
 Visiting Periods

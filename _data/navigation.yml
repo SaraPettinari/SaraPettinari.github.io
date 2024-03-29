@@ -3,12 +3,16 @@ main:
   - title: "Research"
     url: /research/
 
+  - title: "CV"
+    url: /cv/
+
+  - title: "Tools"
+    url: /tools/
+        
   - title: "Publications"
     url: /publications/
     
-  - title: "Tools"
-    url: /tools/
+
     
-  - title: "CV"
-    url: /cv/
+
     

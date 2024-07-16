@@ -11,14 +11,15 @@ redirect_from:
 
 Education
 ======
-* PhD Candidate in Computer Science and Mathematics - University of Camerino (Italy) - 2020-ongoing
+* Postdoctoral Researcher in Computer Science - Gran Sasso Science Institute (Italy) - 2024-ongoing
+* PhD Candidate in Computer Science and Mathematics - University of Camerino (Italy) - 2020-2024
 * Master Degree in Computer Science (LM-18) - University of Camerino (Italy) - 2018-2020
 * Bachelor Degree in Computer Science (L-31) - University of Camerino (Italy) - 2015-2018
 
 
 Visiting Periods
 ======
-* Visiting PhD student with Process Analytics group -  Eindhoven University of Technology (The Netherlands) - 2020
+* Visiting PhD student in the Process Analytics group -  Eindhoven University of Technology (The Netherlands) - 2023
 * Erasmus+ Project in New Technologies in Computer Science - Universidad de Murcia (Spain) - 2019
 
 

@@ -21,7 +21,7 @@ author_profile: true
 
 ### Related Publications
 
-{% for pub in site.publications | where: pub.tool, "fame" %}
+{% for pub in site.publications | where: "tool", "fame" %}
 - **[{{ pub.title }}]({{ pub.permalink }})**  
   <em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}  
   [Paper URL]({{ pub.paperurl }})
@@ -41,7 +41,7 @@ author_profile: true
 
 ### Related Publications
 
-{% for pub in site.publications | where: pub.tool, "tale" %}
+{% for pub in site.publications | where: "tool", "tale" %}
 - **[{{ pub.title }}]({{ pub.permalink }})**  
   <em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}  
   [Paper URL]({{ pub.paperurl }})
@@ -61,10 +61,15 @@ author_profile: true
 
 ### Related Publications
 
-{% for pub in site.publications | where: pub.tool, "soup" %}
+{% for pub in site.publications | where: "tool", "soup" %}
 - **[{{ pub.title }}]({{ pub.permalink }})**  
   <em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}  
   [Paper URL]({{ pub.paperurl }})
+{% endfor %}
+
+
+{% for pub in site.publications %}
+- {{ pub.title }} (Tool: {{ pub.tool }})
 {% endfor %}
 
 ---

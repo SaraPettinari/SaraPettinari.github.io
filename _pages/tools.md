@@ -21,13 +21,13 @@ author_profile: true
 
 ### Related Publications
 
-{% for pub in site.publications %}
-  {% if pub.tool == "fame" %}
+%% for pub in site.publications %%
+  %% if pub.tool == "fame" %%
     - **{{ pub.title }}**  
       _{{ pub.venue }}, {{ pub.date | date: "%Y" }}_  
       [View Paper]({{ pub.paperurl }})
-  {% endif %}
-{% endfor %}
+  %% endif %%
+%% endfor %%
 
 
 
@@ -45,13 +45,13 @@ author_profile: true
 
 ### Related Publications
 
-{% for pub in site.publications %}
-  {% if pub.tool == "tale" %}
+%% for pub in site.publications %%
+  %% if pub.tool == "tale" %%
     - **{{ pub.title }}**  
       _{{ pub.venue }}, {{ pub.date | date: "%Y" }}_  
       [View Paper]({{ pub.paperurl }})
-  {% endif %}
-{% endfor %}
+  %% endif %%
+%% endfor %%
 
 
 
@@ -69,10 +69,10 @@ author_profile: true
 
 ### Related Publications
 
-{% for pub in site.publications %}
-  {% if pub.tool == "soup" %}
+%% for pub in site.publications %%
+  %% if pub.tool == "soup" %%
     - **{{ pub.title }}**  
       _{{ pub.venue }}, {{ pub.date | date: "%Y" }}_  
       [View Paper]({{ pub.paperurl }})
-  {% endif %}
-{% endfor %}
+  %% endif %%
+%% endfor %%

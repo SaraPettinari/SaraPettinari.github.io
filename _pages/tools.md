@@ -7,35 +7,64 @@ author_profile: true
 
 {% include base_path %}
 
+---
+
 ## FaMe
-FaMe is a BPMN-driven framework for multi-robot system development. It allows the definition of a robotic mission using BPMN collaborations and the execution of the system exploiting the ROS2 framework.
 
-***
+**FaMe** is a BPMN-driven framework for multi-robot system development. It facilitates the definition of robotic missions using BPMN collaborations, while leveraging the ROS2 framework for system execution.
 
-<img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/code.svg" width="20" height="20"> Code [here](https://github.com/SaraPettinari/fame)
-<img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/info.svg" width="20" height="20"> Documentation [here](https://pros.unicam.it/fame/)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/code.svg" width="20" height="20"> <a href="https://github.com/SaraPettinari/fame">Code</a>
+  &nbsp;|&nbsp;
+  <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/circle-info.svg" width="20" height="20"> <a href="https://pros.unicam.it/fame/">Documentation</a>
+</p>
 
+### Related Publications
 
-***
+{% for pub in site.publications | where: "tool", "fame" %}
+- **[{{ pub.title }}]({{ pub.permalink }})**  
+  <em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}  
+  [Paper URL]({{ pub.paperurl }})
+{% endfor %}
+
+---
 
 ## TALE
-The TALE tool integrates the tag-based multi-perspective methodology which aims to support the robotic developer in the automatic extraction of multi-perspective event logs from the execution of a robotic system and analyze them through process mining. The tool enables the visualization of the analysis results from both behavioral and spatial perspectives.
 
-***
+**TALE** is a tool that integrates the tag-based multi-perspective methodology. It helps robotic developers automatically extract multi-perspective event logs from robotic system executions and analyze them through process mining. The analysis can be visualized from both behavioral and spatial perspectives.
 
-<img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/code.svg" width="20" height="20"> Code [here](https://github.com/SaraPettinari/tale)
-<img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/info.svg" width="20" height="20"> Documentation [here](https://pros.unicam.it/tale/)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/code.svg" width="20" height="20"> <a href="https://github.com/SaraPettinari/tale">Code</a>
+  &nbsp;|&nbsp;
+  <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/circle-info.svg" width="20" height="20"> <a href="https://pros.unicam.it/tale/">Documentation</a>
+</p>
 
+### Related Publications
 
-***
+{% for pub in site.publications | where: "tool", "tale" %}
+- **[{{ pub.title }}]({{ pub.permalink }})**  
+  <em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}  
+  [Paper URL]({{ pub.paperurl }})
+{% endfor %}
 
+---
 
 ## Soup
-Soup is a WebApp that allows the end user to create an Event Knowledge Graph (EKG). Starting from an event log, saved in a .csv file, the user is guided in creating the EKG to perform object-centric process mining analysis.
 
-***
+**Soup** is a WebApp designed for end users to create Event Knowledge Graphs (EKGs). Starting with an event log in a .csv file, users are guided through the creation of the EKG, which can be used for object-centric process mining analysis.
 
-<img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/code.svg" width="20" height="20"> Code [here](https://bitbucket.org/proslabteam/soup/src/master/)
-<img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/info.svg" width="20" height="20"> Documentation [here](https://pros.unicam.it/soup/)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/code.svg" width="20" height="20"> <a href="https://bitbucket.org/proslabteam/soup/src/master/">Code</a>
+  &nbsp;|&nbsp;
+  <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/circle-info.svg" width="20" height="20"> <a href="https://pros.unicam.it/soup/">Documentation</a>
+</p>
 
-***
+### Related Publications
+
+{% for pub in site.publications | where: "tool", "soup" %}
+- **[{{ pub.title }}]({{ pub.permalink }})**  
+  <em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}  
+  [Paper URL]({{ pub.paperurl }})
+{% endfor %}
+
+---

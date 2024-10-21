@@ -21,11 +21,14 @@ author_profile: true
 
 ### Related Publications
 
-{% for pub in site.publications | where: "tool", "fame" %}
-- **[{{ pub.title }}]({{ pub.permalink }})**  
-  <em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}  
-  [Paper URL]({{ pub.paperurl }})
+{% for pub in site.publications %}
+  {% if pub.tool == "fame" %}
+    - **[{{ pub.title }}]({{ pub.permalink }})**  
+      <em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}  
+      [Paper URL]({{ pub.paperurl }})
+  {% endif %}
 {% endfor %}
+
 
 ---
 
@@ -41,11 +44,14 @@ author_profile: true
 
 ### Related Publications
 
-{% for pub in site.publications | where: "tool", "tale" %}
-- **[{{ pub.title }}]({{ pub.permalink }})**  
-  <em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}  
-  [Paper URL]({{ pub.paperurl }})
+{% for pub in site.publications %}
+  {% if pub.tool == "tale" %}
+    - **[{{ pub.title }}]({{ pub.permalink }})**  
+      <em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}  
+      [Paper URL]({{ pub.paperurl }})
+  {% endif %}
 {% endfor %}
+
 
 ---
 
@@ -61,15 +67,13 @@ author_profile: true
 
 ### Related Publications
 
-{% for pub in site.publications | where: "tool", "soup" %}
-- **[{{ pub.title }}]({{ pub.permalink }})**  
-  <em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}  
-  [Paper URL]({{ pub.paperurl }})
-{% endfor %}
-
-
 {% for pub in site.publications %}
-- {{ pub.title }} (Tool: {{ pub.tool }})
+  {% if pub.tool == "soup" %}
+    - **[{{ pub.title }}]({{ pub.permalink }})**  
+      <em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}  
+      [Paper URL]({{ pub.paperurl }})
+  {% endif %}
 {% endfor %}
+
 
 ---

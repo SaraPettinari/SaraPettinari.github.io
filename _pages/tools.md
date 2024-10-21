@@ -67,4 +67,9 @@ author_profile: true
   [Paper URL]({{ pub.paperurl }})
 {% endfor %}
 
+
+{% for pub in site.publications %}
+- {{ pub.title }} (Tool: {{ pub.tool }})
+{% endfor %}
+
 ---

@@ -23,11 +23,12 @@ author_profile: true
 
 {% for pub in site.publications %}
   {% if pub.tool == "fame" %}
-    - **[{{ pub.title }}]({{ pub.permalink }})**  
-      <em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}  
-      [Paper URL]({{ pub.paperurl }})
+    - **{{ pub.title }}**  
+      _{{ pub.venue }}, {{ pub.date | date: "%Y" }}_  
+      [View Paper]({{ pub.paperurl }})
   {% endif %}
 {% endfor %}
+
 
 
 ---
@@ -46,11 +47,12 @@ author_profile: true
 
 {% for pub in site.publications %}
   {% if pub.tool == "tale" %}
-    - **[{{ pub.title }}]({{ pub.permalink }})**  
-      <em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}  
-      [Paper URL]({{ pub.paperurl }})
+    - **{{ pub.title }}**  
+      _{{ pub.venue }}, {{ pub.date | date: "%Y" }}_  
+      [View Paper]({{ pub.paperurl }})
   {% endif %}
 {% endfor %}
+
 
 
 ---
@@ -69,11 +71,8 @@ author_profile: true
 
 {% for pub in site.publications %}
   {% if pub.tool == "soup" %}
-    - **[{{ pub.title }}]({{ pub.permalink }})**  
-      <em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}  
-      [Paper URL]({{ pub.paperurl }})
+    - **{{ pub.title }}**  
+      _{{ pub.venue }}, {{ pub.date | date: "%Y" }}_  
+      [View Paper]({{ pub.paperurl }})
   {% endif %}
 {% endfor %}
-
-
----

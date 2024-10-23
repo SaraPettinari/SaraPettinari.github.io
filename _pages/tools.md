@@ -21,15 +21,17 @@ author_profile: true
 
 ### Related Publications
 
+<ul>
 {% for pub in site.publications %}
   {% if pub.tool == "fame" %}
-    - **{{ pub.title }}**  
-      _{{ pub.venue }}, {{ pub.date | date: "%Y" }}_  
-      [View Paper]({{ pub.paperurl }})
+    <li>
+      <strong>{{ pub.title }}</strong><br>
+      <em>{{ pub.venue }}, {{ pub.date | date: "%Y" }}</em><br>
+      <a href="{{ pub.paperurl }}">View Paper</a>
+    </li>
   {% endif %}
 {% endfor %}
-
-
+</ul>
 
 ---
 
@@ -45,17 +47,17 @@ author_profile: true
 
 ### Related Publications
 
-<p>
+<ul>
 {% for pub in site.publications %}
   {% if pub.tool == "tale" %}
-    - **{{ pub.title }}**  
-      _{{ pub.venue }}, {{ pub.date | date: "%Y" }}_  
-      [View Paper]({{ pub.paperurl }})
+    <li>
+      <strong>{{ pub.title }}</strong><br>
+      <em>{{ pub.venue }}, {{ pub.date | date: "%Y" }}</em><br>
+      <a href="{{ pub.paperurl }}">View Paper</a>
+    </li>
   {% endif %}
 {% endfor %}
-</p>
-
-
+</ul>
 ---
 
 ## Soup
@@ -70,10 +72,14 @@ author_profile: true
 
 ### Related Publications
 
+<ul>
 {% for pub in site.publications %}
   {% if pub.tool == "soup" %}
-    - **{{ pub.title }}**  
-      _{{ pub.venue }}, {{ pub.date | date: "%Y" }}_  
-      [View Paper]({{ pub.paperurl }})
+    <li>
+      <strong>{{ pub.title }}</strong><br>
+      <em>{{ pub.venue }}, {{ pub.date | date: "%Y" }}</em><br>
+      <a href="{{ pub.paperurl }}">View Paper</a>
+    </li>
   {% endif %}
 {% endfor %}
+</ul>

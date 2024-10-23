@@ -21,9 +21,9 @@ author_profile: true
 
 ### Related Publications
 
-### <a class="btn btn-link" data-bs-toggle="header" href="#fame-publications" role="button" aria-expanded="false" aria-controls="fame-publications">Related Publications</a>
+### <a class="btn btn-link" data-bs-toggle="collapse" href="#fame-publications" role="button" aria-expanded="false" aria-controls="fame-publications">Related Publications</a>
 
-<div class="header" id="fame-publications">
+<div class="collapse" id="fame-publications">
 <ul>
 {% for pub in site.publications %}
   {% if pub.tool == "fame" %}

@@ -45,6 +45,7 @@ author_profile: true
 
 ### Related Publications
 
+<p>
 {% for pub in site.publications %}
   {% if pub.tool == "tale" %}
     - **{{ pub.title }}**  
@@ -52,7 +53,7 @@ author_profile: true
       [View Paper]({{ pub.paperurl }})
   {% endif %}
 {% endfor %}
-
+</p>
 
 
 ---

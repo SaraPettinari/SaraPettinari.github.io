@@ -7,10 +7,12 @@ author_profile: true
 
 {% include base_path %}
 
+I am a Postdoctoral Researcher at the Gran Sasso Science Institute (GSSI), where I work on the HALO project (ethical-aware adjustable autonomous systems).
 
-Sara Pettinari is a Postdoctoral Researcher at the Gran Sasso Science Institute (GSSI), where she works under the HALO (ethical-aware adjustabLe autonomous systems) project.
-Previously, she was a Ph.D. Candidate in Computer Science and Mathematics at the University of Camerino, where she defended a thesis titled: "Process-driven development and analysis of Multi-Robot Systems".
-Her research interests are in Business Process Management and Process Mining with a focus on the development and analysis of IoT and Robotic systems.
+Before this, I was a Ph.D. Candidate in Computer Science and Mathematics at the University of Camerino, where I defended my thesis titled: "Process-driven development and analysis of Multi-Robot Systems."
+
+My research focuses on Business Process Management and Process Mining, with a particular interest in developing and analyzing IoT and Robotic systems.
+
 
 ### Interests
 `Robotic Systems` `IoT` `BPMN` `Process Mining` `Model-driven development` `Multi-perspective analysis`

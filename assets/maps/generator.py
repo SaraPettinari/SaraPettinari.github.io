@@ -42,7 +42,7 @@ fig.update_layout(
         landcolor='whitesmoke',  # Land color
         subunitcolor='lightgrey',  # Subunit borders
         countrycolor='darkgrey',  # Country borders
-        coastlinecolor='darkblue',  # Coastline color
+        coastlinecolor='darkgrey',  # Coastline color
     ),
     margin=dict(l=0, r=0, t=40, b=0),  # Adjust margins
     font=dict(size=14, family='Arial', color='black'),  # Font for text and hover

@@ -7,12 +7,15 @@ redirect_from:
   - /about.html
 ---
 
-# Welcome!
+## Welcome!
 
 I'm Sara, a Postdoctoral Researcher in Computer Science at Gran Sasso Science Institute. 
 Alongside my academic work, I’m passionate about **photography**, **traveling**, and **baking**. 
 
-Feel free to explore my website to learn more about my research!
+Feel free to explore my website to learn more about my research or contact me at
+<i class="fas fa-envelope"></i> [sara.pettinari@gssi.it](mailto:sara.pettinari@gssi.it)!
+
+---
 
 
 ## 📍 Places

@@ -33,17 +33,18 @@ Courses and Schools
 
 Research Groups
 ======
-* Member of the Process and Service Lab ([PROS Lab](https://pros.unicam.it)) at University of Camerino (Italy) - 2020
+* Member of the Process and Service Lab ([PROS Lab](https://pros.unicam.it)) at University of Camerino (Italy) - 2020-24
 
 
 Research Projects
 ======
+* Member of the founded national project HALO “etHical-aware AdjustabLe autOnomous systems”. MIUR - PRIN 2022
 * Member of the founded national project SEDUCE “Designing Spatially Distributed Cyber-Physical Systems under Uncertainty”. MIUR - PRIN 2017
 
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
+  <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   

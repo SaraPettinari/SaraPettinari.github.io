@@ -15,7 +15,6 @@ Alongside my academic work, I’m passionate about **photography**, **traveling*
 Feel free to explore my website to learn more about my research or contact me at
 <i class="fas fa-envelope"></i> [sara.pettinari@gssi.it](mailto:sara.pettinari@gssi.it)!
 
----
 
 
 ## 📍 Places

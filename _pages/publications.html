@@ -1,0 +1,45 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% if site.author.googlescholar %}
+  <div class="scholar-link">
+    📚 You can also find my articles on 
+    <a href="{{ site.author.googlescholar }}" target="_blank">my Google Scholar profile</a>.
+  </div>
+{% endif %}
+
+{% include base_path %}
+
+<!-- Check if publication categories are defined -->
+{% if site.publication_category %}
+  <div class="publication-sections">
+    {% for category in site.publication_category %}
+      {% assign title_shown = false %}
+      {% for post in site.publications reversed %}
+        {% if post.category != category[0] %}
+          {% continue %}
+        {% endif %}
+        {% unless title_shown %}
+          <h2 class="publication-category">{{ category[1].title }}</h2>
+          <hr class="section-divider"/>
+          {% assign title_shown = true %}
+        {% endunless %}
+        <div class="publication-card">
+          {% include archive-single.html %}
+        </div>
+      {% endfor %}
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="publication-list">
+    {% for post in site.publications reversed %}
+      <div class="publication-card">
+        {% include archive-single.html %}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}

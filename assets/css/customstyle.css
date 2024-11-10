@@ -1,0 +1,64 @@
+/* Publications Page Styling */
+.scholar-link {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  .publication-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .publication-category {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 20px;
+  }
+  
+  .section-divider {
+    border: 0;
+    height: 2px;
+    background: #3498db;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .publication-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .publication-card:hover {
+    transform: scale(1.02);
+    border-color: #3498db;
+  }
+  
+  .publication-card h3 {
+    margin-top: 0;
+    color: #34495e;
+  }
+  
+  .publication-card p {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-bottom: 0;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .publication-sections {
+      gap: 20px;
+    }
+    
+    .publication-card {
+      padding: 10px;
+    }
+  }
+  

@@ -11,23 +11,23 @@
   }
   
   /* Category Specific Colors */
-  .publication-category.manuscript,
-  .section-divider.manuscript,
-  .publication-card.manuscript {
+  .publication-category.manuscripts,
+  .section-divider.manuscripts,
+  .publication-card.manuscripts {
     color: #6b33f9; /* Purple */
     border-color: #6b33f9;
   }
   
-  .publication-category.conference,
-  .section-divider.conference,
-  .publication-card.conference {
+  .publication-category.conferences,
+  .section-divider.conferences,
+  .publication-card.conferences {
     color: #0096fa; /* Light Blue */
     border-color: #0096fa;
   }
   
-  .publication-category.book,
-  .section-divider.book,
-  .publication-card.book {
+  .publication-category.books,
+  .section-divider.books,
+  .publication-card.books {
     color: #40e0d0; /* Tiffany */
     border-color: #40e0d0;
   }
@@ -126,48 +126,60 @@
   
   /* Color Themes for Each Tool */
   .tool-card.fame {
-    border-left: 5px solid #5b3aaf;
+    border-left: 5px solid #2200ff;
   }
   
   .tool-card.tale {
-    border-left: 5px solid #5dade2;
+    border-left: 5px solid #7d31ff;
   }
   
   .tool-card.soup {
-    border-left: 5px solid #40e0d0;
+    border-left: 5px solid #ff2929;
   }
   
   .tool-card.fame .tool-links a:hover {
-    background-color: #5b3aaf;
+    background-color: #2200ff;
     color: #fff;
   }
   
   .tool-card.tale .tool-links a:hover {
-    background-color: #5dade2;
+    background-color: #7d31ff;
     color: #fff;
   }
   
   .tool-card.soup .tool-links a:hover {
-    background-color: #40e0d0;
+    background-color: #ff2929;
     color: #fff;
   }
   
   /* Related Publications Styling */
-  .publications-list {
-    padding-left: 20px;
+.publications-list {
+    padding-left: 15px;
     list-style: none;
+    font-size: 0.9em; /* Reduce font size */
+    color: #555; /* Slightly lighter text color for subtlety */
+    line-height: 1.4em; /* Adjust line height for compactness */
   }
   
   .publications-list li {
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Reduce space between items */
   }
   
   .publications-list a {
     color: #3498db;
+    font-weight: normal; /* Regular weight for subtle look */
     text-decoration: none;
   }
   
   .publications-list a:hover {
     text-decoration: underline;
+    color: #2c81ba; /* Darker shade on hover for visibility */
+  }
+  
+  /* Section Title Adjustments */
+  .tool-card h3 {
+    font-size: 1em; /* Slightly smaller title for "Related Publications" */
+    margin-top: 20px;
+    color: #333; /* Darker color for subtle emphasis */
   }
   

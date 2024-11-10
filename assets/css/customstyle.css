@@ -12,21 +12,18 @@
   
   /* Category Specific Colors */
   .publication-category.manuscripts,
-  .section-divider.manuscripts,
   .publication-card.manuscripts {
     color: #6b33f9; /* Purple */
     border-color: #6b33f9;
   }
   
   .publication-category.conferences,
-  .section-divider.conferences,
   .publication-card.conferences {
     color: #0096fa; /* Light Blue */
     border-color: #0096fa;
   }
   
   .publication-category.books,
-  .section-divider.books,
   .publication-card.books {
     color: #40e0d0; /* Tiffany */
     border-color: #40e0d0;
@@ -44,6 +41,7 @@
     height: 2px;
     margin-top: 5px;
     margin-bottom: 20px;
+    color: rgb(80, 80, 80)
   }
   
   .publication-card {

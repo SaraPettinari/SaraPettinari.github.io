@@ -10,24 +10,45 @@
     gap: 30px;
   }
   
+  /* Category Specific Colors */
+  .publication-category.type1,
+  .section-divider.type1,
+  .publication-card.type1 {
+    color: #6b33f9; /* Purple */
+    border-color: #6b33f9;
+  }
+  
+  .publication-category.type2,
+  .section-divider.type2,
+  .publication-card.type2 {
+    color: #0096fa; /* Light Blue */
+    border-color: #0096fa;
+  }
+  
+  .publication-category.type3,
+  .section-divider.type3,
+  .publication-card.type3 {
+    color: #40e0d0; /* Tiffany */
+    border-color: #40e0d0;
+  }
+  
+  /* Base Styling for All Publications */
   .publication-category {
     font-size: 1.5em;
     font-weight: bold;
-    color: #2c3e50;
     margin-top: 20px;
   }
   
   .section-divider {
     border: 0;
     height: 2px;
-    background: #3498db;
     margin-top: 5px;
     margin-bottom: 20px;
   }
   
   .publication-card {
     background-color: #f9f9f9;
-    border: 1px solid #e1e1e1;
+    border: 2px solid;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 15px;
@@ -37,12 +58,10 @@
   
   .publication-card:hover {
     transform: scale(1.02);
-    border-color: #3498db;
   }
   
   .publication-card h3 {
     margin-top: 0;
-    color: #34495e;
   }
   
   .publication-card p {

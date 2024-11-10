@@ -86,8 +86,8 @@ author_profile: true
         {% if pub.tool == "soup" %}
           <li>
             <strong>{{ pub.title }}</strong><br>
-            <em>{{ pub.venue }}, {{ pub.date | date: "%Y" }}</em>
-            [<a href="{{ pub.paperurl }}">View Paper</a>]
+            <em>{{ pub.venue }}, {{ pub.date | date: "%Y" }}</em><br>
+            <a href="{{ pub.paperurl }}">View Paper</a>
           </li>
         {% endif %}
       {% endfor %}

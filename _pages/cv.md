@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+📃 You can also find my complete CV [here](../assets/pdf/CV_SaraPettinari.pdf){:target="_blank"}.
+
 Education
 ======
 * Postdoctoral Researcher in Computer Science - Gran Sasso Science Institute (Italy) - 2024-ongoing

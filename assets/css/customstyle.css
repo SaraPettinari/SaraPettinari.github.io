@@ -1,128 +1,138 @@
 /* Publications Page Styling */
 .scholar-link {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-  }
-  
-  .publication-sections {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  
-  /* Category Specific Colors */
-  .publication-category.manuscripts,
-  .publication-card.manuscripts {
-    color: #6b33f9; /* Purple */
-    border-color: #6b33f9;
-  }
-  
-  .publication-category.conferences,
-  .publication-card.conferences {
-    color: #0096fa; /* Light Blue */
-    border-color: #0096fa;
-  }
-  
-  .publication-category.books,
-  .publication-card.books {
-    color: #40e0d0; /* Tiffany */
-    border-color: #40e0d0;
-  }
-  
-  /* Base Styling for All Publications */
-  .publication-category {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  
-  .section-divider {
-    border: 0;
-    height: 2px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    color: rgb(80, 80, 80)
-  }
-  
-  .publication-card {
-    background-color: #f9f9f9;
-    border: 2px solid;
-    border-radius: 8px;
-    padding: 15px;
-    /*margin-bottom: 15px;*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .publication-card:hover {
-    transform: scale(1.02);
-  }
-  
-  .publication-card h3 {
-    margin-top: 0;
-  }
-  
-  .publication-card p {
-    font-size: 0.9em;
-    color: #7f8c8d;
-    margin-bottom: 0;
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .publication-sections {
-      gap: 20px;
-    }
-    
-    .publication-card {
-      padding: 10px;
-    }
-  }
-  
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
 
-  /* General Page Styling */
-.tools-page {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-top: 20px;
-  }
-  
-  .tool-card {
-    background: #f9f9f9;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .tool-card h2 {
-    font-size: 1.5em;
-    margin-top: 0;
-  }
-  
-  .tool-links {
-    display: flex;
-    justify-content: center;
+.publication-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Category Specific Colors */
+.publication-category.manuscripts,
+.publication-card.manuscripts {
+  color: #6b33f9;
+  /* Purple */
+  /*border-color: #6b33f9;*/
+}
+
+.publication-category.conferences,
+.publication-card.conferences {
+  color: #0096fa;
+  /* Light Blue */
+  /*border-color: #0096fa;*/
+}
+
+.publication-category.books,
+.publication-card.books {
+  color: #40e0d0;
+  /* Tiffany */
+  /*border-color: #40e0d0;*/
+}
+
+/* Base Styling for All Publications */
+.publication-category {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
+.section-divider {
+  border: 0;
+  height: 2px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: rgb(80, 80, 80)
+}
+
+.publication-card {
+  background-color: #f9f9f9;
+  /*border: 2px solid;*/
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*.publication-card:hover {
+    transform: scale(1.02);
+  }*/
+
+.publication-card h3 {
+  margin-top: 0;
+}
+
+.publication-card p {
+  font-size: 0.9em;
+  color: #7f8c8d;
+  margin-bottom: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .publication-sections {
     gap: 20px;
-    margin: 15px 0;
   }
-  
-  .tool-links a {
-    display: inline-flex;
-    align-items: center;
-    color: inherit;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background 0.2s ease-in-out;
+
+  .publication-card {
+    padding: 10px;
   }
-  
-  .tool-links a:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-  
-  /* Color Themes for Each Tool */
+}
+
+
+/* General Page Styling */
+.tools-page {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.tool-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tool-card h2 {
+  margin-top: 0;
+}
+
+.tool-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.tool-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+.tool-links a {
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.2s ease-in-out;
+}
+
+.tool-links a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Color Themes for Each Tool
   .tool-card.fame {
     border-left: 5px solid #2200ff;
   }
@@ -148,36 +158,154 @@
   .tool-card.soup .tool-links a:hover {
     background-color: #ff2929;
     color: #fff;
-  }
-  
-  /* Related Publications Styling */
+  } */
+
+.tool-tags {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Related Publications Styling */
 .publications-list {
-    padding-left: 15px;
-    list-style: none;
-    font-size: 0.9em; /* Reduce font size */
-    color: #555; /* Slightly lighter text color for subtlety */
-    line-height: 1.4em; /* Adjust line height for compactness */
-  }
-  
-  .publications-list li {
-    margin-bottom: 8px; /* Reduce space between items */
-  }
-  
-  .publications-list a {
-    color: #484848;
-    font-weight: normal; /* Regular weight for subtle look */
-    text-decoration: none;
-  }
-  
-  .publications-list a:hover {
-    text-decoration: underline;
-    color: #2c81ba; /* Darker shade on hover for visibility */
-  }
-  
-  /* Section Title Adjustments */
-  .tool-card h3 {
-    font-size: 1em; /* Slightly smaller title for "Related Publications" */
-    margin-top: 20px;
-    color: #333; /* Darker color for subtle emphasis */
-  }
-  
+  padding-left: 15px;
+  list-style: none;
+  font-size: 0.9em;
+  /* Reduce font size */
+  color: #555;
+  /* Slightly lighter text color for subtlety */
+  line-height: 1.4em;
+  /* Adjust line height for compactness */
+}
+
+.publications-list li {
+  margin-bottom: 8px;
+  /* Reduce space between items */
+}
+
+.publications-list a {
+  color: #484848;
+  font-weight: normal;
+  /* Regular weight for subtle look */
+  text-decoration: none;
+}
+
+.publications-list a:hover {
+  text-decoration: underline;
+  color: #2c81ba;
+  /* Darker shade on hover for visibility */
+}
+
+/* Section Title Adjustments */
+.tool-card h3 {
+  font-size: 1em;
+  /* Slightly smaller title for "Related Publications" */
+  margin-top: 20px;
+  color: #333;
+  /* Darker color for subtle emphasis */
+}
+
+/* Banner Styles */
+.banner {
+  background: #fea571;
+  color: white;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  margin: 10px auto;
+  max-width: 800px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Banner Content */
+.banner-content {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Title Style */
+.banner-title {
+  font-weight: bold;
+  margin: 0 0 10px;
+  text-transform: capitalize;
+}
+
+/* Description Style */
+.banner-description {
+  margin: 0 0 20px;
+  color: white;
+  /* Slightly lighter text for contrast */
+}
+
+/* Link Style */
+.banner-link {
+  display: inline-block;
+  background-color: white;
+  color: #fea571;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 10pt;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.banner-link:hover {
+  background-color: #fea571;
+  color: white;
+}
+
+.btn-hide {
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: none;
+}
+
+.btn-hide:hover {
+  background-color: gray;
+  color: white;
+}
+
+p {
+  text-align: justify;
+}
+
+.small {
+  font-size: small;
+  margin-right: 20px;
+}
+
+.bibtex {
+  background: rgb(236, 236, 236, 0.5);
+  padding: 10px;
+  margin: 10px 0;
+  border-left: 4px solid #c1c1c1;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-weight: lighter;
+}

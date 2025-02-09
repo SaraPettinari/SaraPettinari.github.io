@@ -35,6 +35,7 @@ Courses and Schools
 
 Research Groups
 ======
+* Member of the [Exosoul](https://exosoul.disim.univaq.it/) group and of the Software Engineering pillar at the Gran Sasso Science Institute (Italy) - 2024-ongoing
 * Member of the Process and Service Lab ([PROS Lab](https://pros.unicam.it)) at University of Camerino (Italy) - 2020-24
 
 

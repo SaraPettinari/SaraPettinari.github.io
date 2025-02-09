@@ -1,0 +1,19 @@
+---
+layout: archive
+title: "Tools"
+permalink: /tools/
+author_profile: true
+---
+
+<div class="tools-page">
+  {% for tool in site.tools %}
+    {% include tool_card.html
+      tool_class=tool.tool_class
+      tool_name=tool.tool_name
+      tool_description=tool.tool_description
+      tool_code_url=tool.tool_code_url
+      tool_docs_url=tool.tool_docs_url
+      tool_id=tool.tool_id 
+      tool_tags = tool.tags %}
+  {% endfor %}
+</div>

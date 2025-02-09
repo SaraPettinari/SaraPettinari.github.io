@@ -15,4 +15,18 @@ My research focuses on Business Process Management and Process Mining, with a pa
 
 
 ### Interests
-`Robotic Systems` `IoT` `BPMN` `Process Mining` `Model-driven development` `Multi-perspective analysis`
+
+<span class="tag"> Robotic Systems </span> <span class="tag"> IoT </span>  <span class="tag"> BPMN </span> <span class="tag"> Process Mining </span> <span class="tag"> Model-driven development </span> <span class="tag"> Multi-perspective analysis </span> 
+
+<style>
+
+  .tag {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 8px
+  }
+    </style>

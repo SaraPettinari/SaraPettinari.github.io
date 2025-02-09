@@ -1,26 +1,214 @@
-<div class="tool-card {{ include.tool_class }}">
-    <h2>{{ include.tool_name }}</h2>
-    <p><strong>{{ include.tool_name }}</strong> {{ include.tool_description }}</p>
-    
-    <div class="tool-links">
-      <a href="{{ include.tool_code_url }}" target="_blank">
-        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/code.svg" width="20" height="20"> Code
-      </a>
-      <a href="{{ include.tool_docs_url }}" target="_blank">
-        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/circle-info.svg" width="20" height="20"> Documentation
-      </a>
+<div class="tool-card {{ include.tool_class }}" id="tool-{{ tool.tool_id }}">
+  <div class="tool-card-content">
+    <!-- Left Column -->
+    <div class="tool-info">
+      <h2 class="tool-name">{{ include.tool_name }}</h2>
+      <p class="tool-description">{{ include.tool_description }}</p>
     </div>
-    
-    <h3>Related Publications</h3>
-    <ul class="publications-list">
-      {% for pub in site.publications %}
+
+    <!-- Right Column -->
+    <div class="tool-actions">
+      <div class="tool-links">
+        <a href="{{ include.tool_code_url }}" target="_blank" class="tool-link">
+          <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/code.svg" width="20"
+            height="20"> Code
+        </a>
+        <a href="{{ include.tool_docs_url }}" target="_blank" class="tool-link">
+          <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/circle-info.svg"
+            width="20" height="20"> Documentation
+        </a>
+      </div>
+
+      <button onclick="showHide('{{ include.tool_class }}')" class="btn-hide">Related Publications</button>
+      <ul class="publications-list" id="pub-list-{{ include.tool_class }}" style="display: none;">
+        {% for pub in site.publications %}
         {% if pub.tool == include.tool_id %}
-          <li>
-            <p><strong>{{ pub.title }}</strong>. <em>{{ pub.venue }}, {{ pub.date | date: "%Y" }}</em>
-            [<a href="{{ pub.paperurl }}">View Paper</a>]</p>
-          </li>
+        <li>
+          <p><strong>{{ pub.title }}</strong>. <em>{{ pub.venue }}, {{ pub.date | date: "%Y" }}</em>
+            [<a href="{{ pub.permalink }}">View Paper</a>]</p>
+        </li>
         {% endif %}
-      {% endfor %}
-    </ul>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
-  
+
+  <div class="tool-tags">
+    {% for tag in include.tool_tags %}
+    <p class="tag"> {{ tag }} </p>
+    {% endfor %}
+  </div>
+</div>
+
+
+
+
+<script>
+  function showHide(tool_id) {
+    div_id = 'pub-list-' + tool_id
+    var x = document.getElementById(div_id);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+
+<style>
+  /* Card Wrapper */
+  .tool-card {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .tool-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Two-Column Layout */
+  .tool-card-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  /* Left Column: Title & Description */
+  .tool-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tool-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+
+  .tool-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* Right Column: Links & Publications */
+  .tool-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 15px;
+    border-left: 2px solid #ececec;
+  }
+
+  .tool-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .tool-links a{
+    font-size: 14px;
+  }
+
+  .tool-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: #56616d;
+    background: #f9f9f9;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+
+
+  .btn-hide {
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    color: #555;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .btn-hide:hover {
+    background-color: #444;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  /* Publications List */
+  .publications-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.4;
+  }
+
+  .publications-list li {
+    margin-bottom: 8px;
+  }
+
+  .publications-list a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+    color: #888;
+  }
+  .publications-list a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #444;
+  }
+
+  /* Tags Section */
+  .tool-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 12px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .tag {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .tool-card-content {
+      grid-template-columns: 1fr;
+    }
+
+    .tool-actions {
+      border-left: none;
+      padding-left: 0;
+    }
+  }
+</style>

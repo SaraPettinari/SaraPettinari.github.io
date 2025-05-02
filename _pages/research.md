@@ -11,12 +11,12 @@ I am a Postdoctoral Researcher at the Gran Sasso Science Institute [(GSSI)](http
 
 Before this, I was a Ph.D. Candidate in Computer Science and Mathematics at the University of Camerino, where I defended my thesis titled: "Process-driven Development and Analysis of Multi-Robot Systems".
 
-My research focuses on Business Process Management and Process Mining, with a particular interest in developing and analyzing IoT and Robotic systems.
+My research focuses on business process management and process mining, particularly on the development and analysis of robotic system missions. Additionally, my work explores the integration of ethical aspects in the design and development of autonomous systems.
 
 
 ### Interests
 
-<span class="tag"> Robotic Systems </span> <span class="tag"> IoT </span>  <span class="tag"> BPMN </span> <span class="tag"> Process Mining </span> <span class="tag"> Model-driven development </span> <span class="tag"> Multi-perspective analysis </span> 
+<span class="tag"> Robotic Systems </span> <span class="tag"> Autonomous Systems </span>  <span class="tag"> BPMN </span> <span class="tag"> Process Mining </span> <span class="tag"> Model-driven development </span> <span class="tag"> Multi-perspective analysis </span> 
 
 <style>
 

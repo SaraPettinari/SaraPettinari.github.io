@@ -1,0 +1,72 @@
+<div class="news-item">
+  <div class="news-header">
+    <span class="news-date">{{ include.date }}</span>
+    <span class="news-separator">|</span>
+    <span class="news-event">{{ include.event }}</span>
+    {% if include.website %}
+    <a href="{{ include.website }}" class="news-link" target="_blank">Learn More</a>
+    {% endif %}
+    {% if include.linkedin %}
+    <a href="{{ include.linkedin }}" class="news-link linkedin" target="_blank">View LinkedIn Post</a>
+    {% endif %}
+  </div>
+  <span class="news-description">{{ include.description }}</span>
+  <div class="news-divider"></div>
+</div>
+
+<style>
+  .news-header {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .news-date {
+    color: #88c7ff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+
+  .news-link {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #919191;
+    color: #fff;
+    font-size: 14px;
+  }
+
+
+  .news-event {
+    color: #494e52;
+    flex: 1;
+  }
+
+  .news-separator {
+    color: #bbb;
+  }
+
+  .news-description {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #919191;
+    margin-top: 10px;
+  }
+
+  .news-divider {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #d8edff, transparent);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 2px;
+  }
+
+  .linkedin {
+    background: #88c7ff;
+  }
+</style>

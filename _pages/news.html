@@ -1,0 +1,20 @@
+---
+layout: archive
+title: "News"
+permalink: /news/
+author_profile: true
+---
+
+<div class="news-page">
+  {% assign sorted_news = site.news | sort: 'date' | reverse %}
+  {% for news in sorted_news %}
+    {% assign formatted_date = news.date | date: "%Y-%m-%d" %}
+    {% include news_entry.html
+      date=formatted_date
+      event=news.event
+      description=news.description
+      website=news.website
+      linkedin=news.linkedin
+    %}
+  {% endfor %}
+</div>

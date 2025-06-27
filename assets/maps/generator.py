@@ -14,6 +14,7 @@ visited_places = [
     {"city": "Lucca", "lat": 43.8410, "lon": 10.5042, "description": "International Conference on Coordination Models and Languages (COORDINATION 2022)"},
     {"city": "Eindhoven", "lat": 51.4415, "lon": 5.4697, "description": "3 months visiting @ TU/e (2023)"},
     {"city": "Groningen", "lat": 53.2194, "lon": 6.5665, "description": "International Conference on Enterprise Design, Operations and Computing (EDOC 2023)"},
+    {"city": "Vienna", "lat": 48.210033, "lon": 16.363449, "description": "International Conference on Advanced Information Systems Engineering (CAiSE 2025)"},
 ]
 
 # Convert to DataFrame

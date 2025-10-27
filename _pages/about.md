@@ -26,6 +26,7 @@ Feel free to explore my website to learn more about my research or contact me at
       event=news.event
       description=news.description
       website=news.website
+      website2=news.website2
       linkedin=news.linkedin
     %}
   {% endfor %}

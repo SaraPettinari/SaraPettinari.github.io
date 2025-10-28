@@ -7,6 +7,6 @@ tool_description: "is a WebApp designed to ease the creation of Event Knowledge 
 tool_code_url: "https://github.com/soup-ocpm/soup"
 tool_docs_url: "https://pros.unicam.it/soup/"
 tool_id: "soup"
-logo: "./logos/soup.png"
-tags: ["analysis", "process-mining", "object-centric-process-mining"]
+tool_logo: "../images/logos/soup.png"
+tags: ["analysis", "object-centric", "process-mining"]
 ---

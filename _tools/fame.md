@@ -7,5 +7,6 @@ tool_description: "is a BPMN-driven framework for multi-robot system development
 tool_code_url: "https://github.com/SaraPettinari/fame"
 tool_docs_url: "https://pros.unicam.it/fame/"
 tool_id: "fame"
+tool_logo: "../images/logos/fame.png"
 tags: ["development", "robot", "bpmn"]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "CV"
-permalink: /cv/
+permalink: /cv-old/
 author_profile: true
 redirect_from:
   - /resume
@@ -27,6 +27,7 @@ Visiting Periods
 
 Courses and Schools
 ======
+* SPACERAISE. Robotics for Space Applications & Artificial Intelligence for Aerospace - 2025
 * Robotics and STEM in Schools - 2022
 * 1<sup>st</sup> Summer School on Process Mining - 2022
 * 2<sup>nd</sup> Summer School on CPS and IoT - 2021
@@ -44,6 +45,11 @@ Research Projects
 * Member of the founded national project HALO “etHical-aware AdjustabLe autOnomous systems”. MIUR - PRIN 2022
 * Member of the founded national project SEDUCE “Designing Spatially Distributed Cyber-Physical Systems under Uncertainty”. MIUR - PRIN 2017
 
+Organization
+======
+* Co-organizer of the <em>1<sup>st</sup> International Workshop on Engineering Autonomous Systems Intelligence</em> (EASI 2026) @ CAiSE 2026
+* Guest Editor for the <em>Special Issue on Collaboration Process Mining for Distributed Systems</em> in Information Systems [SJR Q1]
+* Co-organizer of the <em>4<sup>th</sup> Workshop on Collaborative Mining for Distributed Systems</em> (CoMinDS 2025) @ ICPM 2025
 
 Publications
 ======

@@ -14,10 +14,11 @@ visited_places = [
     {"city": "Lucca", "lat": 43.8410, "lon": 10.5042, "description": "International Conference on Coordination Models and Languages (COORDINATION 2022)"},
     {"city": "Eindhoven", "lat": 51.4415, "lon": 5.4697, "description": "3 months visiting @ TU/e (2023)"},
     {"city": "Groningen", "lat": 53.2194, "lon": 6.5665, "description": "International Conference on Enterprise Design, Operations and Computing (EDOC 2023)"},
-    {"city": "Vienna", "lat": 48.210033, "lon": 16.363449, "description": "International Conference on Advanced Information Systems Engineering (CAiSE 2025)"},
+    {"city": "Vienna", "lat": 48.210033, "lon": 16.363449, "description": "International Conference on Advanced Information Systems Engineering (CAiSE 2025) <br>Digital Humanism – Interdisciplinary Science and Research Conference (DIGHUM 2025)"},
     {"city": "Gent", "lat": 51.049999, "lon": 3.733333, "description": "Internet of Processes and Things Meeting (2025)"},
     {"city": "Odense", "lat": 55.3997225, "lon": 10.3852104, "description": "Robotics Software Engineering Meeting (RSE 2025)"},
     {"city": "Montevideo", "lat": -34.9011, "lon": -56.1645, "description": "International Conference on Process Mining (ICPM 2025)"},
+    #{"city": "Vienna", "lat": 48.2035, "lon": 16.3609, "description": "Digital Humanism – Interdisciplinary Science and Research Conference (DIGHUM 2025)"},
 ]
 
 # Convert to DataFrame
@@ -38,7 +39,7 @@ fig = px.scatter_map(
 )
 
 # Update hovertemplate to show only description
-fig.update_traces(hovertemplate='<b> 📍 %{customdata[0]}:</b> %{customdata[1]}<extra></extra> ')
+fig.update_traces(hovertemplate='<b> 📍 %{customdata[0]}</b> <br>%{customdata[1]}<extra></extra> ')
 
 
 # Customize layout for a more visually appealing look

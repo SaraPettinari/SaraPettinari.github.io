@@ -37,6 +37,8 @@
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: -10px;
+  font-family: 'Roboto';
+  font-style: italic;
 }
 
 .section-divider {
@@ -64,9 +66,10 @@
 }
 
 .publication-card p {
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #7f8c8d;
   margin-bottom: 0;
+  margin-left: 40px;
 }
 
 /* Responsive Adjustments */

@@ -1,0 +1,296 @@
+---
+layout: archive
+title: "CV"
+permalink: /cv/
+author_profile: true
+redirect_from:
+  - /resume
+---
+
+{% include base_path %}
+
+<style>
+/* CV page styling  */
+.page__content .cv-hero{
+  padding: 1.2rem 1.2rem;
+  border: 1px solid rgba(0,0,0,.10);
+  border-radius: 16px;
+  background: rgba(0,0,0,.02);
+  margin: 0 0 1.4rem 0;
+}
+.page__content .cv-hero h2{
+  margin: 0;
+  line-height: 1.15;
+}
+.page__content .cv-hero p{
+  margin: .35rem 0 0 0;
+}
+.page__content .cv-actions{
+  margin-top: .8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+.page__content .cv-actions a{
+  text-decoration: none;
+}
+
+/* Section spacing */
+.page__content .cv-section{
+  margin: 1.4rem 0 1.0rem 0;
+}
+.page__content .cv-section-title{
+  margin: 1.2rem 0 .6rem 0;
+}
+
+/* Timeline */
+.page__content .cv-timeline{
+  position: relative;
+  border-left: 3px solid rgba(0,0,0,.10);
+  padding-left: 1.1rem;
+  margin: .6rem 0 1.2rem 0;
+}
+.page__content .cv-entry{
+  position: relative;
+  padding: .85rem 0 .85rem 0;
+}
+.page__content .cv-entry::before{
+  content: "";
+  position: absolute;
+  left: -1.33rem;
+  top: 1.05rem;
+  width: .70rem;
+  height: .70rem;
+  border-radius: 999px;
+  background: #fff;
+  border: 3px solid rgba(0,0,0,.18);
+}
+.page__content .cv-entry-head{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.page__content .cv-title{
+  font-weight: 700;
+}
+.page__content .cv-place{
+  opacity: .80;
+  font-weight: 600;
+}
+.page__content .cv-meta{
+  opacity: .75;
+  margin-top: .2rem;
+}
+.page__content .cv-desc{
+  margin-top: .35rem;
+}
+
+.page__content .cv-list{
+  margin: .4rem 0 1.2rem 0;
+  padding-left: 1.1rem;
+}
+.page__content .cv-list li{
+  margin: .35rem 0;
+}
+
+.page__content .cv-pubs{
+  list-style: none;
+  padding-left: 0;
+  margin: .6rem 0 0 0;
+}
+.page__content .cv-pubs > li{
+  border: 1px solid rgba(0,0,0,.10);
+  border-radius: 14px;
+  padding: .85rem .95rem;
+  margin: .65rem 0;
+  background: rgba(0,0,0,.015);
+}
+.page__content .cv-pubs > li p{
+  margin: .35rem 0;
+}
+
+.cv-hero{
+  padding: 1.2rem 1.2rem;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 14px;
+  background: rgba(0,0,0,.02);
+  margin: 0 0 1.2rem 0;
+}
+
+.cv-timeline{
+  border-left: 3px solid rgba(0,0,0,.08);
+  padding-left: 1rem;
+  margin-top: .5rem;
+}
+
+.cv-entry{
+  padding: .8rem 0;
+}
+
+.cv-entry-head{
+  display:flex;
+  justify-content:space-between;
+  gap: 1rem;
+  font-weight: 600;
+}
+.cv-place{ opacity:.75; font-weight: 500; }
+
+.cv-meta{
+  opacity:.7;
+  font-size: .95em;
+  margin-top: .15rem;
+  margin-bottom: .4rem;
+}
+
+.cv-entry ul{
+  margin: .3rem 0 0 1.1rem;
+}
+.page__content .cv-side{
+  float: right;
+  margin: 0 0 1rem 1.2rem;
+  padding: 1rem;
+  border: 1px solid rgba(0,0,0,.12);
+  border-radius: 16px;
+  background: rgba(0,0,0,.02);
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  max-width: 220px;
+}
+
+</style>
+
+<aside class="cv-side" aria-label="CV quick actions">
+  <a class="btn btn--primary btn--small"
+     href="/assets/pdf/CV_SaraPettinari.pdf"
+     target="_blank"
+     rel="noopener">
+    📄 Full CV (PDF)
+  </a>
+
+</aside>
+
+
+<section class="cv-section" id="education">
+  <h2 class="cv-section-title">Education</h2>
+
+  <div class="cv-timeline">
+    <article class="cv-entry">
+      <div class="cv-entry-head">
+        <span class="cv-title">Postdoctoral Researcher in Computer Science</span>
+        <span class="cv-place">Gran Sasso Science Institute</span>
+      </div>
+      <div class="cv-meta">2024 - ongoing · L'Aquila (Italy)</div>
+    </article>
+
+    <article class="cv-entry">
+      <div class="cv-entry-head">
+        <span class="cv-title">PhD in Computer Science and Mathematics</span>
+        <span class="cv-place">University of Camerino</span>
+      </div>
+      <div class="cv-meta">2020 - 2024 · Camerino (Italy)</div>
+    </article>
+
+    <article class="cv-entry">
+      <div class="cv-entry-head">
+        <span class="cv-title">Master Degree in Computer Science (LM-18)</span>
+        <span class="cv-place">University of Camerino</span>
+      </div>
+      <div class="cv-meta">2018 - 2020 · Camerino (Italy)</div>
+    </article>
+
+    <article class="cv-entry">
+      <div class="cv-entry-head">
+        <span class="cv-title">Bachelor Degree in Computer Science (L-31)</span>
+        <span class="cv-place">University of Camerino</span>
+      </div>
+      <div class="cv-meta">2015 - 2018 · Camerino (Italy)</div>
+    </article>
+  </div>
+</section>
+
+<section class="cv-section" id="visiting">
+  <h2 class="cv-section-title">Visiting periods</h2>
+
+  <div class="cv-timeline">
+    <article class="cv-entry">
+      <div class="cv-entry-head">
+        <span class="cv-title">Visiting PhD student (Process Analytics group)</span>
+        <span class="cv-place">Eindhoven University of Technology</span>
+      </div>
+      <div class="cv-meta">2023 · Eindhoven (The Netherlands)</div>
+    </article>
+
+    <article class="cv-entry">
+      <div class="cv-entry-head">
+        <span class="cv-title">Erasmus+ Project in New Technologies in Computer Science</span>
+        <span class="cv-place">Universidad de Murcia</span>
+      </div>
+      <div class="cv-meta">2019 - 2020 · Murcia (Spain)</div>
+    </article>
+  </div>
+</section>
+
+<section class="cv-section" id="courses">
+  <h2 class="cv-section-title">Courses and schools</h2>
+
+  <ul class="cv-list">
+    <li><strong>SPACERAISE.</strong> Robotics for Space Applications &amp; Artificial Intelligence for Aerospace · 2025</li>
+    <li><strong>Robotics and STEM in Schools</strong> · 2022</li>
+    <li><strong>1<sup>st</sup> Summer School on Process Mining</strong> · 2022</li>
+    <li><strong>2<sup>nd</sup> Summer School on CPS and IoT</strong> · 2021</li>
+    <li><strong>Teacher training (FOR24)</strong> - University of Camerino (Italy) · 2019</li>
+  </ul>
+</section>
+
+<section class="cv-section" id="groups">
+  <h2 class="cv-section-title">Research groups</h2>
+
+  <ul class="cv-list">
+    <li>
+      Member of the
+      <a href="https://exosoul.disim.univaq.it/" target="_blank" rel="noopener">Exosoul</a>
+      group and of the Software Engineering pillar at the Gran Sasso Science Institute (Italy) · 2024 - ongoing
+    </li>
+    <li>
+      Member of the Process and Service Lab
+      (<a href="https://pros.unicam.it" target="_blank" rel="noopener">PROS Lab</a>)
+      at University of Camerino (Italy) · 2020 - 2024
+    </li>
+  </ul>
+</section>
+
+<section class="cv-section" id="projects">
+  <h2 class="cv-section-title">Research projects</h2>
+
+  <ul class="cv-list">
+    <li>
+      Member of the funded national project <strong>HALO</strong> “etHical-aware AdjustabLe autOnomous systems” - MIUR · PRIN 2022
+    </li>
+    <li>
+      Member of the funded national project <strong>SEDUCE</strong> “Designing Spatially Distributed Cyber-Physical Systems under Uncertainty” - MIUR · PRIN 2017
+    </li>
+  </ul>
+</section>
+
+<section class="cv-section" id="organization">
+  <h2 class="cv-section-title">Organization</h2>
+
+  <ul class="cv-list">
+    <li>Co-organizer of the <em>1<sup>st</sup> International Workshop on Engineering Autonomous Systems Intelligence</em> (EASI 2026) @ CAiSE 2026</li>
+    <li>Guest Editor for the <em>Special Issue on Collaboration Process Mining for Distributed Systems</em> in <em>Information Systems</em> [SJR Q1]</li>
+    <li>Co-organizer of the <em>4<sup>th</sup> Workshop on Collaborative Mining for Distributed Systems</em> (CoMinDS 2025) @ ICPM 2025</li>
+  </ul>
+</section>
+
+<section class="cv-section" id="publications">
+  <h2 class="cv-section-title">Publications</h2>
+
+  <ul class="cv-pubs">
+    {% for post in site.publications reversed %}
+      <li>{% include archive-single-cv.html %}</li>
+    {% endfor %}
+  </ul>
+</section>

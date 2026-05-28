@@ -11,9 +11,12 @@ redirect_from:
 
 📃 You can also find my complete CV [here](../assets/pdf/CV_SaraPettinari.pdf){:target="_blank"}.
 
-Education
+Job
 ======
 * Postdoctoral Researcher in Computer Science - Gran Sasso Science Institute (Italy) - 2024-ongoing
+
+Education
+======
 * PhD Candidate in Computer Science and Mathematics - University of Camerino (Italy) - 2020-2024
 * Master Degree in Computer Science (LM-18) - University of Camerino (Italy) - 2018-2020
 * Bachelor Degree in Computer Science (L-31) - University of Camerino (Italy) - 2015-2018

@@ -19,6 +19,7 @@ visited_places = [
     {"city": "Odense", "lat": 55.3997225, "lon": 10.3852104, "description": "Robotics Software Engineering Meeting (RSE 2025)"},
     {"city": "Montevideo", "lat": -34.9011, "lon": -56.1645, "description": "International Conference on Process Mining (ICPM 2025)"},
     {"city": "Rio de Janeiro", "lat": -22.9068, "lon": -43.1729, "description": "International Conference on Software Engineering (ICSE 2026)"},
+    {"city": "Verona", "lat": 45.4384, "lon": 10.9916, "description": "International Conference on Advanced Information Systems Engineering (CAiSE 2026)"},
     #{"city": "Vienna", "lat": 48.2035, "lon": 16.3609, "description": "Digital Humanism – Interdisciplinary Science and Research Conference (DIGHUM 2025)"},
 ]
 

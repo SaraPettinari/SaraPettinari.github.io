@@ -5,41 +5,173 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="scholar-link"><p>
-    📚 You can also find my articles on 
-    <a href="{{ site.author.googlescholar }}" target="_blank">Google Scholar</a> and <a href="https://dblp.org/pid/309/1119.html"> dblp</a>.
-  </p></div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
+{% if site.author.googlescholar %}
+<div class="publications-intro">
+  <p>
+    📚 You can also find my articles on
+    <a href="{{ site.author.googlescholar }}" target="_blank">Google Scholar</a>
+    and
+    <a href="https://dblp.org/pid/309/1119.html" target="_blank">dblp</a>.
+  </p>
+</div>
+{% endif %}
+
 {% if site.publication_category %}
-  <div class="publication-sections">
-    {% for category in site.publication_category %}
-      {% assign title_shown = false %}
-      {% for post in site.publications reversed %}
-        {% if post.category != category[0] %}
-          {% continue %}
-        {% endif %}
-        {% unless title_shown %}
-          <!-- Assign a class based on category -->
-          <h2 class="publication-category {{ category[0] | downcase }}">{{ category[1].title }}</h2>
-          {% assign title_shown = true %}
-        {% endunless %}
-        <div class="publication-card {{ category[0] | downcase }}">
-          {% include archive-single.html %}
-        </div>
-      {% endfor %}
-    {% endfor %}
-  </div>
-{% else %}
-  <div class="publication-list">
-    {% for post in site.publications reversed %}
-      <div class="publication-card">
-        {% include archive-single.html %}
+<div class="publication-sections">
+  {% for category in site.publication_category %}
+  {% assign title_shown = false %}
+
+  {% for post in site.publications reversed %}
+  {% if post.category != category[0] %}
+  {% continue %}
+  {% endif %}
+
+  {% unless title_shown %}
+  <section class="publication-section {{ category[0] | downcase }}">
+    <h2 class="publication-category {{ category[0] | downcase }}">
+      {{ category[1].title }}
+    </h2>
+    {% assign title_shown = true %}
+    {% endunless %}
+
+    <article class="publication-card {{ category[0] | downcase }}">
+      {% if post.cover_image and post.cover_link %}
+      <a class="publication-cover" href="{{ post.cover_link }}" target="_blank" rel="noopener">
+        <img src="{{ post.cover_image }}" alt="Cover of {{ post.title }}">
+      </a>
+      {% elsif post.cover_image %}
+      <div class="publication-cover">
+        <img src="{{ post.cover_image }}" alt="Cover of {{ post.title }}">
       </div>
+      {% elsif post.venue_acronym %}
+      <div class="publication-badge">
+        {{ post.venue_acronym }}
+      </div>
+      {% endif %}
+
+      <div class="publication-card__content">
+        <h3 class="publication-title">
+          {{ post.title }}
+        </h3>
+
+        {% if post.authors %}
+        <p class="publication-authors">
+          {{ post.authors }}
+        </p>
+        {% endif %}
+
+        <p class="publication-meta">
+          {% if post.venue %}
+          <span class="publication-venue">{{ post.venue }}</span>
+          {% endif %}
+
+          {% if post.year %}
+          <span class="publication-year">{{ post.year }}</span>
+          {% elsif post.date %}
+          <span class="publication-year">{{ post.date | date: "%Y" }}</span>
+          {% endif %}
+        </p>
+
+        {% if post.excerpt %}
+        <p class="publication-excerpt">
+          {{ post.excerpt | markdownify | strip_html | truncate: 240 }}
+        </p>
+        {% endif %}
+
+        <div class="publication-links">
+          <a href="{{ base_path }}{{ post.url }}">Details</a>
+
+          {% if post.paperurl %}
+          <a href="{{ post.paperurl }}" target="_blank">Paper</a>
+          {% endif %}
+
+          {% if post.code %}
+          <a href="{{ post.code }}" target="_blank">Code</a>
+          {% endif %}
+
+          {% if post.slides %}
+          <a href="{{ post.slides }}" target="_blank">Slides</a>
+          {% endif %}
+
+          {% if post.poster %}
+          <a href="{{ post.poster }}" target="_blank">Poster</a>
+          {% endif %}
+        </div>
+      </div>
+    </article>
     {% endfor %}
-  </div>
+
+    {% if title_shown %}
+  </section>
+  {% endif %}
+  {% endfor %}
+</div>
+{% else %}
+<div class="publication-sections">
+  <section class="publication-section">
+    {% for post in site.publications reversed %}
+    <article class="publication-card">
+      {% if post.venue_acronym %}
+      <div class="publication-badge">
+        {{ post.venue_acronym }}
+      </div>
+      {% endif %}
+
+      <div class="publication-card__content">
+        <h3 class="publication-title">
+          <a href="{{ base_path }}{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h3>
+
+        {% if post.authors %}
+        <p class="publication-authors">
+          {{ post.authors }}
+        </p>
+        {% endif %}
+
+        <p class="publication-meta">
+          {% if post.venue %}
+          <span class="publication-venue">{{ post.venue }}</span>
+          {% endif %}
+
+          {% if post.year %}
+          <span class="publication-year">{{ post.year }}</span>
+          {% elsif post.date %}
+          <span class="publication-year">{{ post.date | date: "%Y" }}</span>
+          {% endif %}
+        </p>
+
+        {% if post.excerpt %}
+        <p class="publication-excerpt">
+          {{ post.excerpt | markdownify | strip_html | truncate: 240 }}
+        </p>
+        {% endif %}
+
+        <div class="publication-links">
+          <a href="{{ base_path }}{{ post.url }}">Details</a>
+
+          {% if post.paperurl %}
+          <a href="{{ post.paperurl }}" target="_blank">Paper</a>
+          {% endif %}
+
+          {% if post.code %}
+          <a href="{{ post.code }}" target="_blank">Code</a>
+          {% endif %}
+
+          {% if post.slides %}
+          <a href="{{ post.slides }}" target="_blank">Slides</a>
+          {% endif %}
+
+          {% if post.poster %}
+          <a href="{{ post.poster }}" target="_blank">Poster</a>
+          {% endif %}
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+</div>
 {% endif %}

@@ -21,6 +21,7 @@ visited_places = [
     {"city": "Rio de Janeiro", "lat": -22.9068, "lon": -43.1729, "description": "International Conference on Software Engineering (ICSE 2026)"},
     {"city": "Verona", "lat": 45.4384, "lon": 10.9916, "description": "International Conference on Advanced Information Systems Engineering (CAiSE 2026)"},
     #{"city": "Vienna", "lat": 48.2035, "lon": 16.3609, "description": "Digital Humanism – Interdisciplinary Science and Research Conference (DIGHUM 2025)"},
+    {"city": "Barcelona", "lat": 41.3879, "lon": 2.1699, "description": "Robotics Software Engineering Meeting (RSE 2026)"},
 ]
 
 # Convert to DataFrame
